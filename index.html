@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap-image-hover.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
     <link rel="stylesheet" href="css/main.css">
 
     <title>Cozinha gostosa</title>
@@ -17,12 +20,20 @@
   <body>
     <header>
       <div class="container-fluid top-section">
-        <h1 class="site-title text-center">Cozinha Gostosa</h1>
+        <div class="row justify-content-center">
+          <div class="col">
+            <h1 class="site-title text-center">
+              <a href="#">Cozinha Gostosa</a>
+            </h1>
+          </div>
+        </div>
       </div>
-      <nav class="container-fluid menu">
+      <nav class="container-fluid">
+        <div class="container menu">
           <span>Doces</span>
           <span>Salgados</span>
           <span>Contato</span>
+        </div>
       </nav>
     </header>
 
@@ -30,7 +41,13 @@
       <div class="container featured-recipes-container">
 
         <div class="row">
-          <div class="col-12 col-md-4">
+          <div class="col section-header">
+            <h2>Destaques deliciosos</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
               <div class="hovereffect">
                   <img class="img-responsive" src="images/sushi1.jpg" alt="">
                   <div class="overlay">
@@ -39,7 +56,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6">
               <div class="hovereffect">
                   <img class="img-responsive" src="images/strogonoff.jpg" alt="">
                   <div class="overlay">
@@ -48,9 +65,20 @@
                   </div>
               </div>
           </div>
-          <div class="col-12 col-md-4">
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
               <div class="hovereffect">
                   <img class="img-responsive" src="images/hamburger1.jpg" alt="">
+                  <div class="overlay">
+                     <h2>Hover effect 1</h2>
+                     <a class="info" href="#">link here</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6">
+              <div class="hovereffect">
+                  <img class="img-responsive" src="images/doce1.jpg" alt="">
                   <div class="overlay">
                      <h2>Hover effect 1</h2>
                      <a class="info" href="#">link here</a>
@@ -60,16 +88,7 @@
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-4">
-              <div class="hovereffect">
-                  <img class="img-responsive" src="images/doce1.jpg" alt="">
-                  <div class="overlay">
-                     <h2>Hover effect 1</h2>
-                     <a class="info" href="#">link here</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6">
               <div class="hovereffect">
                   <img class="img-responsive" src="images/doce3.jpg" alt="">
                   <div class="overlay">
@@ -78,7 +97,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6">
               <div class="hovereffect">
                   <img class="img-responsive" src="images/doce4.jpg" alt="">
                   <div class="overlay">
@@ -89,12 +108,40 @@
           </div>
         </div>
 
-        <div class="row btn-mais-receitas justify-content-center">
+        <div class="row justify-content-center">
           <div class="col-12 col-md-6 align-self-center text-center">
-            <button type="button" class="btn btn-lg btn-lg-ex btn-block btn-danger">Mais receitas!</button>
+            <button type="button" class="btn btn-lg btn-lg-ex btn-block btn-danger btn-mais-grande">Mais receitas!</button>
           </div>
         </div>
 
+      </div>
+    </div>
+
+    <div class="container-fluid middle-section-2">
+      <div class="container featured-recipes-container">
+        <div class="row">
+          <div class="col section-header">
+            <h2>Vídeos</h2>
+          </div>
+        </div>
+
+        <div class="videos-container">
+          <div>
+            <iframe src="https://www.youtube.com/embed/1eOY42u01fY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div>
+            <iframe src="https://www.youtube.com/embed/91ZXVw58Ths" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div>
+            <iframe src="https://www.youtube.com/embed/sv3TXMSv6Lw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 align-self-center text-center">
+            <button type="button" class="btn btn-lg btn-lg-ex btn-block btn-danger btn-mais-grande btn-mais-videos">Acessar canal no Youtube!</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -103,8 +150,24 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
   </body>
 </html>
+
+<script>
+$(document).ready(function(){
+  $('.videos-container').slick({
+    dots: true,
+    //centerMode: true,
+    //centerPadding: '60px',
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+    //adaptiveHeight: true,
+    //variableWidth: true
+  });
+});
+</script>

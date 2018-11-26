@@ -1,5 +1,5 @@
 .top-section {
-  min-height: 200px;
+  min-height: 332px;
   background-color: #ED5565;
 }
 
@@ -7,11 +7,26 @@
   min-height: 800px;
   background-color: #F5F7F1;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+.middle-section .section-header h2{
+  color: #DA4453;
+}
+
+.middle-section-2 {
+  min-height: 1000px;
+  background-color: #48CFAD;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.middle-section-2 .section-header h2{
+  color: white;
 }
 
 .bottom-section {
-  min-height: 300px;
+  min-height: 250px;
   background-color: #434A54;
 }
 
@@ -19,7 +34,22 @@
   color: white;
   padding-top: 30px;
   font-family: 'Dancing Script', cursive;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: white;
   font-size: 120px;
+  transition: font-size 0.5s;
+}
+
+.site-title a:hover {
+  text-decoration: none;
+  font-size: 121px;
+}
+
+.site-title a:visited {
+  text-decoration: none;
 }
 
 nav {
@@ -28,8 +58,6 @@ nav {
   font-size: 30px;
   color: white;
   background-color: #DA4453;
-  display: flex;
-  justify-content: space-around;
 }
 
 nav span {
@@ -38,9 +66,13 @@ nav span {
   font-family: 'Amatic SC', cursive;
 }
 
+nav span:hover {
+  color: #E6E9ED;
+}
+
 .menu {
-  padding-left: 40vw;
-  padding-right: 40vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 .featured-recipes-container .col-12 {
@@ -49,7 +81,7 @@ nav span {
 }
 
 .featured-recipes-container .hovereffect {
-  height: 300px;
+  max-height: 370px;
 }
 
 .featured-recipes-container img{
@@ -59,10 +91,45 @@ nav span {
   object-position: center;
 }
 
-.btn-mais-receitas {
+.btn-mais-grande {
   margin-top: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
 }
 
-.btn-lg-ex {
-  font-size: 1.5rem;
+.section-header h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+}
+
+@media only screen and (min-width: 730px) {
+  .top-section {
+    min-height: 200px;
+  }
+
+  .menu {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
+.videos-container {
+  margin-top: 20px;
+}
+
+.videos-container iframe {
+  width: 1115px;
+  height: 550px;
+}
+
+.btn-mais-videos {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #434A54;
+}
+
+.btn-mais-videos:hover {
+  background-color: #ffeeba;
+  border-color: #ffeeba;
+  color: #434A54;
 }
