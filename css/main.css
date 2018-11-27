@@ -6,7 +6,7 @@
 .middle-section {
   min-height: 800px;
   background-color: #F5F7F1;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -17,7 +17,7 @@
 .middle-section-2 {
   min-height: 1000px;
   background-color: #48CFAD;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -26,8 +26,10 @@
 }
 
 .bottom-section {
-  min-height: 250px;
+  min-height: 400px;
   background-color: #434A54;
+  color: #E6E9ED;
+  padding-top: 50px;
 }
 
 .site-title {
@@ -73,6 +75,20 @@ nav span:hover {
 .menu {
   display: flex;
   justify-content: space-around;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: #E6E9ED;
+}
+
+.menu a:visited {
+  text-decoration: none;
 }
 
 .featured-recipes-container .col-12 {
@@ -132,4 +148,14 @@ nav span:hover {
   background-color: #ffeeba;
   border-color: #ffeeba;
   color: #434A54;
+}
+
+.social-media-icons img {
+  width: 48px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.contato-email {
+  margin-top: 50px;
 }
