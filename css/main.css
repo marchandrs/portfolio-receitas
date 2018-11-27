@@ -150,6 +150,16 @@ nav span:hover {
   color: #434A54;
 }
 
+.btn-mais-videos:active {
+  background-color: #fbe5a2;
+  border-color: #fbe5a2;
+  color: #434A54;
+}
+
+.btn-mais-videos:focus {
+  box-shadow: 0 0 0 .2rem rgba(251,229,162,.25);
+}
+
 .social-media-icons img {
   width: 48px;
   margin-right: 20px;
