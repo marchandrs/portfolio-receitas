@@ -118,17 +118,6 @@ nav span:hover {
   font-size: 3.5rem;
 }
 
-@media only screen and (min-width: 730px) {
-  .top-section {
-    min-height: 200px;
-  }
-
-  .menu {
-    padding-left: 20vw;
-    padding-right: 20vw;
-  }
-}
-
 .videos-container {
   margin-top: 20px;
 }
@@ -164,8 +153,30 @@ nav span:hover {
   width: 48px;
   margin-right: 20px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .contato-email {
   margin-top: 50px;
+}
+
+@media only screen and (min-width: 730px) {
+  .top-section {
+    min-height: 200px;
+  }
+
+  .menu {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .contato-header {
+    margin-top: 50px;
+  }
+
+  .contato-email {
+    margin-top: 0px;
+  }
 }
